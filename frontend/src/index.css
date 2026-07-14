@@ -1,0 +1,119 @@
+/* 全局样式重置 - 渐变蓝科技风 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1e97f3;
+  --color-primary-light: #8cd8ef;
+  --color-primary-dark: #0d7ad6;
+  --color-accent-cyan: #00e5ff;
+  --color-accent-purple: #5b8cff;
+  --bg-dark: #0a0e17;
+  --bg-card: #0a1628;
+  --bg-elevated: #111d35;
+  --border-color: #1e3a5f;
+  --text-primary: #f0f4f8;
+  --text-secondary: #9cb3cc;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Inter', 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(30deg, #0a1628 0%, #0d2040 50%, #0a0e17 100%);
+  background-attachment: fixed;
+  color: #f0f4f8;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* 发光边框效果 */
+.glow-border {
+  box-shadow: 0 0 20px rgba(30, 151, 243, 0.35),
+              0 0 45px rgba(140, 216, 239, 0.15);
+  border: 1px solid rgba(30, 151, 243, 0.4);
+}
+
+/* 玻璃拟态卡片 */
+.glass-card {
+  background: rgba(10, 22, 40, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(30, 58, 95, 0.6);
+}
+
+/* 发光文字效果 */
+.glow-text {
+  text-shadow: 0 0 12px currentColor;
+}
+
+/* 渐变按钮 */
+.gradient-button {
+  background: linear-gradient(30deg, #1e97f3 0%, #8cd8ef 100%);
+  border: none;
+  box-shadow: 0 4px 18px rgba(30, 151, 243, 0.45);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c4f7a;
+}
+
+/* 选中文本样式 */
+::selection {
+  background: rgba(30, 151, 243, 0.3);
+  color: #f0f4f8;
+}
+
+/* Ant Design 深色模式覆盖 */
+.ant-layout {
+  background: #0a0e17 !important;
+}
+
+.ant-layout-content {
+  background: #0a0e17 !important;
+}
+
+.ant-menu-dark {
+  background: #0a1628 !important;
+}
+
+.ant-card {
+  background: rgba(10, 22, 40, 0.85) !important;
+}
+
+.ant-table {
+  background: #0a1628 !important;
+}
+
+.ant-modal-content {
+  background: #0a1628 !important;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  background: #111d35 !important;
+}
